@@ -2,7 +2,10 @@ import React from 'react';
 import Hero from './components/Hero';
 import WhyVigilhawk from './components/WhyVigilhawk';
 import FeaturesPreview from './components/FeaturesPreview';
+import SolutionsUseCases from './components/SolutionsUseCases';
+import TrustSecurity from './components/TrustSecurity';
 import ContactDemo from './components/ContactDemo';
+import SiteFooter from './components/SiteFooter';
 
 export default function App() {
   return (
@@ -16,8 +19,9 @@ export default function App() {
           </a>
           <nav className="hidden items-center gap-6 text-sm text-gray-300 md:flex">
             <a href="#features" className="hover:text-white">Platform</a>
+            <a href="#solutions" className="hover:text-white">Solutions</a>
             <a href="#why" className="hover:text-white">Why Vigilhawk</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
+            <a href="#trust" className="hover:text-white">Security</a>
             <a href="#contact" className="rounded-md bg-[#7C3AED] px-4 py-2 text-white hover:opacity-90">Book a Demo</a>
           </nav>
         </div>
@@ -27,7 +31,10 @@ export default function App() {
       <Hero />
       <WhyVigilhawk />
       <FeaturesPreview />
+      <SolutionsUseCases />
+      <TrustSecurity />
       <ContactDemo />
+      <SiteFooter />
     </div>
   );
 }
