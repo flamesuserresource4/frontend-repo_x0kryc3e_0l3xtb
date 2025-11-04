@@ -1,28 +1,35 @@
-import { useState } from 'react'
+import React from 'react';
+import Hero from './components/Hero';
+import WhyVigilhawk from './components/WhyVigilhawk';
+import FeaturesPreview from './components/FeaturesPreview';
+import ContactDemo from './components/ContactDemo';
+import SiteFooter from './components/SiteFooter';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
+    <div className="min-h-screen w-full" style={{ backgroundColor: '#0A0A0F' }}>
+      {/* Navigation */}
+      <header className="sticky top-0 z-50 w-full border-b border-[#1F1F2B] backdrop-blur supports-[backdrop-filter]:bg-[#0A0A0F]/70">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+          <a href="#" className="flex items-center gap-2 text-white">
+            <span className="inline-block h-2 w-2 rounded-full bg-[#7C3AED] shadow-[0_0_10px_rgba(124,58,237,0.8)]" />
+            <span className="text-sm font-semibold tracking-wide">Vigilhawk Labs</span>
+          </a>
+          <nav className="hidden items-center gap-6 text-sm text-gray-300 md:flex">
+            <a href="#features" className="hover:text-white">Platform</a>
+            <a href="#why" className="hover:text-white">Why Vigilhawk</a>
+            <a href="#contact" className="hover:text-white">Contact</a>
+            <a href="#contact" className="rounded-md bg-[#7C3AED] px-4 py-2 text-white hover:opacity-90">Book a Demo</a>
+          </nav>
         </div>
-      </div>
-    </div>
-  )
-}
+      </header>
 
-export default App
+      {/* Sections */}
+      <Hero />
+      <WhyVigilhawk />
+      <FeaturesPreview />
+      <ContactDemo />
+      <SiteFooter />
+    </div>
+  );
+}
