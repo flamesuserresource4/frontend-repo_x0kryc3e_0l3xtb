@@ -44,7 +44,7 @@ export default function FeaturesPreview() {
           {features.map(({ icon: Icon, title, desc }) => (
             <a
               key={title}
-              href="#"
+              href="#contact"
               className="group relative overflow-hidden rounded-xl border border-[#1F1F2B] bg-gradient-to-b from-white/5 to-transparent p-6 transition hover:border-[#7C3AED]/40"
             >
               <div className="mb-4 flex items-center gap-3">

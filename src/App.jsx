@@ -3,7 +3,6 @@ import Hero from './components/Hero';
 import WhyVigilhawk from './components/WhyVigilhawk';
 import FeaturesPreview from './components/FeaturesPreview';
 import ContactDemo from './components/ContactDemo';
-import SiteFooter from './components/SiteFooter';
 
 export default function App() {
   return (
@@ -29,7 +28,6 @@ export default function App() {
       <WhyVigilhawk />
       <FeaturesPreview />
       <ContactDemo />
-      <SiteFooter />
     </div>
   );
 }
